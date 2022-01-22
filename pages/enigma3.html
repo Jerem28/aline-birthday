@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <main id="swup" class="transition-fade">
+            <h1>3. Le troisième mot</h1>
+            <h1>La première lettre de l'alphabet</h1>
+            <h3>(là c'est vraiment cadeau, et je suis sûr que tu n'as pas remarqué qu'on vient de passer du b. dans l'énigme au 3. maintenant XD)</h3>
+            <label for="firstInput">Ta réponse : </label>
+            <input id="text" type="text" name="firstInput" oninput="inputUpdate()" onchange="submit()"/>
+            <button id="validate" onclick="submit()">Je tente ma chance</button>
+            <h1 id="answer"></h1>
+            <div class="button-container">
+                <a href="/pages/enigma2.html" class="previous">Previous</a>
+                <a href="/index.html" class="next">Home</a>
+                <a id="next-enigma" class="forbidden" href="/pages/enigma4.html">Next</a>
+            </div>
+        </main>
+
+        <script>
+            const input = document.getElementById('text')
+            const answer = document.getElementById("answer");
+            let isAnswered = false;
+            const inputUpdate = () => {
+                if(!isAnswered) {
+                    answer.innerHTML = "";
+                }
+            }
+            const submit = () => {
+                const val = input.value.trim().toLowerCase();
+                if (val === "a" || val === 'à') {
+                    answer.innerHTML = " J'aurai flippé si tu l'avais pas trouvé celle-là :D"
+                    const next = document.getElementById("next-enigma")
+                    next.className = "next"
+                    isAnswered = true;
+                }
+                else {
+                    answer.innerHTML = "Loupé !"
+                }
+            }
+        </script>
+
+    </div>
+</body>
+</html>
