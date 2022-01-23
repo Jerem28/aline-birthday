@@ -46,7 +46,15 @@ html.is-animating .transition-fade {
     opacity: 0;
 }
 
-.next, .previous, #validate {
+.next, .previous {
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#validate {
     background: rgba(16, 108, 247, 0.1);
     padding: 5px;
     border-radius: 5px 5px 5px 5px;
