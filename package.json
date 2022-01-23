@@ -1,0 +1,24 @@
+{
+  "name": "aline-birthday",
+  "version": "1.0.0",
+  "description": "Website for Aline's Birthday Enigma !",
+  "main": "index.html",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "swup": "^2.0.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jerem28/aline-birthday.git"
+  },
+  "author": "RAKOTOARISOA Jeremy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jerem28/aline-birthday/issues"
+  },
+  "homepage": "https://github.com/Jerem28/aline-birthday#readme"
+}
